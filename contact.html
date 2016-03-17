@@ -1,0 +1,116 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Arnav Gupta</title>
+</head>
+    
+<body>
+<div id=“container”> 
+<!-- The BODY is where the main content goes -->
+	<div id="top_row">
+	<header> <!-- Header is new tag in HTML 5 -->
+		<h1>Arnav Gupta</h1>
+		<h3>Carnegie Mellon University, Information Systems Program</h3>
+	</header>
+
+	<nav> <!-- Nav is new tag in HTML 5 -->
+	    <a href="index.html">About</a> | <!-- Navigation to other pages in our website - these are relative links -->
+	    <a href="projects.html">Projects</a> |
+	    <a href="contact.html" class="selected">Contact</a> |
+	    <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->	
+	</nav>
+	</div>
+	
+	<div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+		<h3>Contact</h3>
+		<p>Please use the following map to find me:</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.436913658959!2d-79.94564002099405!3d40.44346577946303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2219059e091%3A0x47888be8ae0bea3a!2s5000+Forbes+Ave%2C+Pittsburgh%2C+PA+15213!5e0!3m2!1sen!2sus!4v1457985381252" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+		
+		<form onsubmit="return validate()">
+		<fieldset>
+	    	<legend>Tell me more about yourself…</legend>
+		 	<label>Name:<br/></label> 
+	  		<input type="text" placeholder="Your name" size = "20" maxlength="250"><br/>
+	  		<br/>
+	  		<label for="txtDate">Your date of birth:<br/></label>
+	  		<input type="date" id="txtDate" name="txtDate" value="" size="20" maxlength ="250" placeholder="mm/dd/yyyy" required><br/>
+	  	</fieldset>
+	  	<fieldset>
+	  		<legend>Tell me about your preferences...</legend>
+	  		<lable>Your favourite flower color:<br/></lable>
+	  		<input type="color"><br>
+	  		<br/>
+	  		<label>Message:<br/></label>
+	  		<textarea rows="10" cols="50" maxlength="1000" ></textarea><br/>
+	  	</fieldset>
+	  	<fieldset>
+	  		<legend>Let’s stay in touch...</legend>
+	  		<label>Phone Number</label><br>
+	  		<input type="text" required id = "phone"></input><br>
+	  		<label>How did you find out aboout me?:</label>
+	  		<select>
+	  			<option value="Google">Google</option>
+	  			<option value="News article">News article</option>
+	  			<option value="Friend">Friend</option>
+	  			<option value="other">other</option>
+			</select><br>
+			<br/>
+			<label>Please indicate if you want to recieve update via mail<br/></label>
+			<input type = "checkbox">Yes! please update me!</input><br/>
+			<br/>
+			<label>Please provide your email address<br/></label>
+			<input type="email" placeholder="abc@defg.com"><br/>
+			<br/>
+			<label>Choose a password<br/></label>
+			<input type="password"><br/>
+			<br/>
+			<input type="image" src="images/submit.png" alt = "submit"><br/>
+		</fieldset>
+
+
+
+	 </form>
+	  
+	  <!-- LAB 2 WORK GOES HERE -->
+	  
+	    
+		
+	</div> <!-- Close content -->
+	<div id = "sidebar">
+		<h3>Find me</h3>
+		Arnav Gupta<br/>
+		<a href = "http://www.cmu.edu" target = "_blank">Carnegie mEllon Universit
+		</a>
+		5000 Forbes Avenue<br/>
+		Pittsburgh, PA 15213<br/>
+		412-268-0000 (h)<br/>
+		412-268-0000 (c)<br/>
+		<a href='mailto:arnavgup@andrew.cmu.edu'><img src="images/email.png"></a>
+		<a href='https://www.facebook.com/'><img src="images/facebook.png"></a>
+		<a href='https://www.linkedin.com/in/arnavgup'><img src="images/linkedIn.png"></a>
+	</div>
+	<footer> <!-- Footer is new tag in HTML 5 -->
+		<hr/> <!-- horizontal row -->
+		&copy; Arnav Gupta 2016
+	</footer>
+</div>
+
+</body>
+
+</html>

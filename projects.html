@@ -1,0 +1,154 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head> 
+<!-- The HEAD section has (mostly) items that are not directly seen by the user -->
+
+	
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Jeria Quesenberry">
+	<meta name="keywords" content="Carnegie Mellon University, Information Systems, resume">
+	<meta name="description" content="Jane Doe Professional Website">
+
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$( "#accordion" ).accordion();
+		});
+	</script>
+	<script>
+		$(function() {
+			$( "#tabs" ).tabs({
+				event: "mouseover"
+			});
+		});
+	</script>
+	
+	<!-- The title will appear in the menu bar of the browser -->
+	<title>Arnav Gupta</title>
+</head>
+    
+<body>
+<!-- The BODY is where the main content goes -->
+	<div id=“container”> 
+	<div id="top_row">
+	<header> <!-- Header is new tag in HTML 5 -->
+		<h1>Arnav Gupta</h1>
+		<h3>Carnegie Mellon University, Information Systems Program</h3>
+	</header>
+
+	<nav> <!-- Nav is new tag in HTML 5 -->
+	    <a href="index.html">About</a> | <!-- Navigation to other pages in our website - these are relative links -->
+	    <a href="projects.html" class="selected">Projects</a> |
+	    <a href="contact.html">Contact</a> |
+	    <!-- This anchor takes us to another page within the site; hence it is called a relative link. -->	
+	</nav>
+	</div>
+	<div id="content">
+<!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+		<h3>Projects</h3>
+		<div id = "accordion">
+			<h4>Case Analysis Project</h4>
+			<div><p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat lacus vel rutrum blandit. Suspendisse ullamcorper commodo ipsum, vel bibendum nisi condimentum non. Morbi fringilla risus elementum, condimentum velit a, vulputate dolor. Vivamus a ipsum magna. Suspendisse et interdum dolor, at commodo libero. Vestibulum pellentesque tortor convallis libero cursus faucibus. Proin id sapien sollicitudin purus convallis dictum egestas rhoncus arcu. Mauris venenatis sagittis urna, aliquam laoreet nibh sodales a.
+			</p></div>
+			<h4>Web Development Project</h4>
+			<div><p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat lacus vel rutrum blandit. Suspendisse ullamcorper commodo ipsum, vel bibendum nisi condimentum non. Morbi fringilla risus elementum, condimentum velit a, vulputate dolor. Vivamus a ipsum magna. Suspendisse et interdum dolor, at commodo libero. Vestibulum pellentesque tortor convallis libero cursus faucibus. Proin id sapien sollicitudin purus convallis dictum egestas rhoncus arcu. Mauris venenatis sagittis urna, aliquam laoreet nibh sodales a.
+			</p></div>
+			<h4>Database Project</h4>
+			<div><p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat lacus vel rutrum blandit. Suspendisse ullamcorper commodo ipsum, vel bibendum nisi condimentum non. Morbi fringilla risus elementum, condimentum velit a, vulputate dolor. Vivamus a ipsum magna. Suspendisse et interdum dolor, at commodo libero. Vestibulum pellentesque tortor convallis libero cursus faucibus. Proin id sapien sollicitudin purus convallis dictum egestas rhoncus arcu. Mauris venenatis sagittis urna, aliquam laoreet nibh sodales a.
+				</p>
+				<ul>
+					<li>item 1</li>
+					<li>item 1</li>
+					<li>item 2</li>
+				</ul></div>
+			</div>
+			<br>
+		<div id="tabs">
+			<ul>
+			<li><a href = "#tabs‐1">CaseAnalysisProject</a></li>
+			<li><a href = "#tabs‐2">WebDevProject</a></li>
+			<li><a href ="#tabs‐3">DatabaseProject</a></li>
+			</ul>
+			<div id = "tabs‐1">
+				<p>Proin elitarcu,rutrumcommodo,vehiculatempus,commodoa,risus.Curabiturnecarcu.
+				Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+				massaetlorem.Maurisdapibuslacusauctorrisus.Aeneantemporullamcorperleo.Vivamussed
+				magnaquisligulaeleifendadipiscing.Duisorci.Aliquamsodalestortorvitaeipsum.Aliquam
+				nulla.Duisaliquammolestieerat.</p>
+			</div>
+			<div id="tabs‐2">
+				<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra
+				massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus
+				malesuada,metuserosmolestielectus,uttempuserosmassautdolor.Aeneanaliquetfringilla
+				sem.Curabiturornareconsequatnunc.Aeneanvelmetus.Utposuereviverranulla.Aliquamerat
+				volutpat.Pellentesqueconvallis.</p>
+			</div>
+			<div id="tabs‐3">
+				<p>Mauriseleifendestetturpis.Duisiderat.Suspendissepotenti.Aliquamvulputate,pede
+				vel vehicula accumsan, minequerutrumerat,eucongueorciloremegetlorem.Vestibulumnon
+				ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+				himenaeos.Fuscesodales.Quisqueeuurnavelenimcommodopellentesque.</p>
+			</div>
+		</div>
+		<br>
+
+		<table border="4">
+			<tr><th colspan="3">Course Projects</th></tr>
+			<tr>
+				<th>Title</th>
+				<th>Course</th>
+				<th>Semester</th>
+			</tr>
+			<tr onmouseover= "showDescription('Wrote a paper on the business strategies of Air Canada')" onmouseout= "hideDescription()">
+				<td>Case Analysis Project</td>
+				<td>67-250</td>
+				<td>Spring 2015</td>
+			</tr>
+			<tr onmouseover= "showDescription('developed a website fulfuilling the requirements of a local bakery')" onmouseout= "hideDescription()">
+				<td>Web development Project</td>
+				<td>67-250</td>
+				<td>Spring 2015</td>
+			</tr>
+			<tr onmouseover= "showDescription('developed a database fulfuilling the requirements of a firm')" onmouseout= "hideDescription()">
+				<td>Database project</td>
+				<td>67-250</td>
+				<td>Spring 2015</td>
+			</tr>
+		</table>
+		<div id="description"></div>
+		
+
+	</div> <!-- Close content -->
+	<div id = "sidebar">
+		<h3>Find me</h3>
+		Arnav Gupta<br/>
+		<a href = "http://www.cmu.edu" target = "_blank">Carnegie mEllon Universit
+		</a>
+		5000 Forbes Avenue<br/>
+		Pittsburgh, PA 15213<br/>
+		412-268-0000 (h)<br/>
+		412-268-0000 (c)<br/>
+		<a href='mailto:arnavgup@andrew.cmu.edu'><img src="images/email.png"></a>
+		<a href='https://www.facebook.com/'><img src="images/facebook.png"></a>
+		<a href='https://www.linkedin.com/in/arnavgup'><img src="images/linkedIn.png"></a>
+	</div>
+	<footer> <!-- Footer is new tag in HTML 5 -->
+		<hr/> <!-- horizontal row -->
+		&copy; Arnav Gupta 2016
+	</footer>
+	</div>
+</body>
+
+</html>
